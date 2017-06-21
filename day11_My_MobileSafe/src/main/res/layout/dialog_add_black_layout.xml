@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/add_black_title_tv"
+        style="@style/Activity_Title_Style"
+        android:text="请设置要拦截的号码"/>
+
+    <EditText
+        android:id="@+id/add_black_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入要拦截的号码"
+        android:inputType="number"
+        android:paddingEnd="20dp"
+        android:paddingLeft="15dp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:textColor="?attr/colorControlActivated"
+        android:textColorHint="@android:color/holo_green_light"/>
+
+    <RadioGroup
+        android:id="@+id/add_black_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/add_black_rb1"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="电话"/>
+
+        <RadioButton
+            android:id="@+id/add_black_rb2"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="短信"/>
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/add_black_rb3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="全部"/>
+
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_black_ok_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/dg_btn_confirm_selector"
+            android:text="ok"/>
+
+        <Button
+            android:id="@+id/add_black_cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/dg_btn_confirm_selector"
+            android:text="cancel"/>
+
+    </LinearLayout>
+</LinearLayout>

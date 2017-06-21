@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="CirleView">
+        <attr name="points_num" format="integer"/>
+        <attr name="points_size" format="dimension"/>
+        <attr name="points_position" format="integer"/>
+        <attr name="points_src1" format="reference"/>
+        <attr name="points_src2" format="reference"/>
+        <attr name="points_margin" format="dimension"/>
+
+    </declare-styleable>
+
+
+</resources>

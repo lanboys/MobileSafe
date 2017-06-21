@@ -1,0 +1,73 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        style="@style/Activity_Title_Style"
+        android:text="2.手机卡的绑定"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="通过绑定sim卡:\n下次重启手机,如果发现sim卡发生改变,就会改安全号码发送报警短信"
+        android:textColor="#0a000a"
+        android:textSize="16sp"/>
+
+
+    <ToggleButton
+        android:id="@+id/guide_bind_tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/dg_btn_confirm_selector"
+        android:drawableRight="@drawable/lock_selector"
+        android:textColor="#f7f2f7"
+        android:textOff="绑定sim卡"
+        android:textOn="解绑sim卡"
+        android:textSize="20sp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <include layout="@layout/fragment_item_circleview"/>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"
+            android:src="@drawable/step_2"/>
+
+        <ImageView
+            android:id="@+id/guide_pre_iv"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/dg_btn_confirm_selector"
+            android:src="@drawable/pre"/>
+
+        <ImageView
+            android:id="@+id/guide_next_iv"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/dg_btn_confirm_selector"
+            android:src="@drawable/next"/>
+
+    </RelativeLayout>
+</LinearLayout>

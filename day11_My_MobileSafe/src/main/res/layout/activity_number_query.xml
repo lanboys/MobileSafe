@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_number_query_title"
+        style="@style/Activity_Title_Style"
+        android:text="号码查询"/>
+
+    <EditText
+        android:id="@+id/et_number_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入要查询的号码"
+        android:inputType="phone"
+        android:paddingEnd="20dp"
+        android:paddingLeft="15dp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:textColor="?attr/colorControlActivated"/>
+
+    <Button
+        android:id="@+id/btn_number_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/dg_btn_confirm_selector"
+        android:text="查询"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_number_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="号码归属地: "
+        android:textSize="30dp"/>
+
+</LinearLayout>

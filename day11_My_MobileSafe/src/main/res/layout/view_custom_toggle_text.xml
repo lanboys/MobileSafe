@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setting_item_containerll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="horizontal"
+    >
+    <!--tools:background="@drawable/middle_selector"-->
+
+    <TextView
+        android:id="@+id/setting_item_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:paddingTop ="20dp"
+        android:paddingBottom="20dp"
+        tools:text="text"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"/>
+        <!--tools:background="#789"-->
+
+    <ToggleButton
+        android:id="@+id/setting_item_toggleButton"
+        android:layout_width="40dp"
+        android:background="@drawable/togglebutton_selector"
+        android:layout_height="30dp"
+        android:checked="true"
+        />
+        <!--android:textOff="@null"-->
+        <!--android:textOn="@null"-->
+    <!--注意选择器的状态是checked-->
+</LinearLayout>

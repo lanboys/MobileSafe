@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_watch_dog_title"
+        style="@style/Activity_Title_Style"
+        android:text="程序锁"/>
+
+    <TextView
+        android:id="@+id/tv_watch_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="小码哥手机卫士"
+        android:textSize="25dp"
+        />
+
+    <ImageView
+        tools:src="@mipmap/ic_launcher"
+        android:id="@+id/iv_watch_dog_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/et_watch_dog_psd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="请输入程序锁密码(密码:123)"
+        android:inputType="numberPassword"
+        android:paddingEnd="20dp"
+        android:paddingLeft="15dp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:textColor="?attr/colorControlActivated"
+        android:textColorHint="@android:color/holo_green_light"/>
+
+    <!--<EditText-->
+    <!--android:id="@+id/psd_dialog_et2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="请再次输入密码"-->
+    <!--android:inputType="numberPassword"-->
+    <!--android:paddingEnd="20dp"-->
+    <!--android:paddingLeft="15dp"-->
+    <!--android:paddingStart="20dp"-->
+    <!--android:paddingTop="20dp"-->
+    <!--android:textColor="?attr/colorControlActivated"-->
+    <!--android:textColorHint="@android:color/holo_green_light"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_watch_dog_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/dg_btn_confirm_selector"
+            android:text="ok"/>
+
+        <Button
+            android:id="@+id/btn_watch_dog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/dg_btn_confirm_selector"
+            android:text="cancel"/>
+
+    </LinearLayout>
+</LinearLayout>

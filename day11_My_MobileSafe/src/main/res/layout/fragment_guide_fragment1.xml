@@ -1,0 +1,77 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        style="@style/Activity_Title_Style"
+        android:text="1.欢迎使用手机防盗"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:text="您的手机防盗卫士"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        style="@style/Guide_Item_Style"
+        android:text="sim卡变更报警"/>
+
+    <TextView
+        style="@style/Guide_Item_Style"
+        android:text="GPS追踪"/>
+
+
+    <TextView
+        style="@style/Guide_Item_Style"
+        android:text="远程锁屏"/>
+
+    <TextView
+        style="@style/Guide_Item_Style"
+        android:text="远程清除数据"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <include layout="@layout/fragment_item_circleview"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"
+            android:src="@drawable/step_1"/>
+
+        <Button
+            android:id="@+id/guide_pre_iv"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/dg_btn_confirm_selector"
+            android:text="取消向导"
+            />
+
+        <ImageView
+            android:id="@+id/guide_next_iv"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/dg_btn_confirm_selector"
+            android:src="@drawable/next"/>
+
+    </RelativeLayout>
+</LinearLayout>

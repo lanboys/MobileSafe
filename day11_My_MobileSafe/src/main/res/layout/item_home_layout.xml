@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/blue_bkg"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/home_logo_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/default_icon"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="小码哥手机卫士"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:text="广州小码哥教育科技有限公司，是一家专注于培养高级IT技术人才,为学员提供定制化IT职业规划方案及意见咨询服务的教育科技公司。"
+            android:textColor="@android:color/black"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

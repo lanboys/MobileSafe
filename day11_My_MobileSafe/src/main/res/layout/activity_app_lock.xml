@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_app_lock"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/header_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/tb_app_unlock"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:background="@drawable/tab_left_selector"
+            android:checked="true"
+            android:textColor="#fff"
+            android:textOff="未加锁"
+            android:textOn="未加锁"
+            android:textSize="25dp"/>
+
+        <ToggleButton
+            android:id="@+id/tb_app_lock"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:background="@drawable/tab_right_selector"
+            android:textColor="#fff"
+            android:textOff="已加锁"
+            android:textOn="已加锁"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_app_lock_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1fe24a"
+        android:gravity="center"
+        android:text="加锁程序个数为"
+        android:textSize="22dp"
+        />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_app_lock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+        <include layout="@layout/lv_item_app_manager_layout2"/>
+    </FrameLayout>
+
+</LinearLayout>

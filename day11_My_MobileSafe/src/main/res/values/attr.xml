@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SettingItemLayout">
+        <!--可以添加默认值吗-->
+        <attr name="toggle_checked" format="boolean">false</attr>
+        <attr name="textOn" format="string"/>
+        <attr name="textOff" format="string"/>
+        <attr name="backgroundLocation" >
+            <enum name="top" value="1"/>
+            <enum name="middle" value="0"/>
+            <enum name="bottom" value="-1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CirleView">
+        <attr name="points_num" format="integer"/>
+        <attr name="points_size" format="dimension"/>
+        <attr name="points_position" format="integer"/>
+        <attr name="points_src1" format="reference"/>
+        <attr name="points_src2" format="reference"/>
+        <attr name="points_margin" format="dimension"/>
+
+    </declare-styleable>
+    <declare-styleable name="MyRelativeLayout">
+        <attr name="big_title" format="string"/>
+        <attr name="small_title" format="string"/>
+        <attr name="background" format="reference"/>
+
+    </declare-styleable>
+</resources>
