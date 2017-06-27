@@ -7,7 +7,7 @@
     >
 
 
-    <com.m520it.piontloop.CirleView
+    <com.bing.piontloop.CirleView
         android:id="@+id/guide_cv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
         myapp:points_src1="@drawable/list_button_lock_pressed"
         myapp:points_src2="@drawable/list_button_unlock_default"
         >
-    </com.m520it.piontloop.CirleView>
+    </com.bing.piontloop.CirleView>
 
 
 </RelativeLayout>

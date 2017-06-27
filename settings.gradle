@@ -1,5 +1,5 @@
-include ':day11_My_MobileSafe',
-        ':day06_eventTest',
+include ':My_MobileSafe',
+        ':EventTest',
         ':myapplication',
         ':PiontLoopTest',
         ':ListView_CheckboxTest',

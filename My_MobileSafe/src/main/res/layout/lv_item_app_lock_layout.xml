@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:padding="5dp">
+    <!--android:clickable="true"-->
+    <ImageView
+        android:id="@+id/iv_app_icon_item"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/a"/>
+
+    <TextView
+        android:id="@+id/tv_app_name_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:text="360手机卫士"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"/>
+
+    <ImageView
+        android:id="@+id/iv_app_lock_item"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/a"/>
+</LinearLayout>
